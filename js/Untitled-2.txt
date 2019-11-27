@@ -1,0 +1,30 @@
+var button = document.querySelector('.button');
+var inputValue = document.getElementById('place');
+var name = document.querySelector('.name');
+var desc = document.querySelector('.desc');
+var temp = document.querySelector('.temp');
+var hum = document.querySelector('.hum');
+
+button.addEventListener('click',function() {
+  fetch ('https://api.openweathermap.org/data/2.5/weather?q=' + place.value + '&units=metric'+'&appid=78f65a2fbe7edec82f699c57b8367bcb')
+    .then (response=>response.json())
+    .then(data => {
+      var iconValue = data['weather']['0']['description']['icon'];
+      var nameValue = data['name'];
+      var tempValue = data['main']['temp'];
+      var humValue = data['main']['humidity'];
+      var descValue = data['weather']['0']['description'];
+
+
+      name.innerHtml = nameValue;
+      temp.innerHTML = tempValue;
+      desc.innerHTML = descValue;
+      hum.innerHTML=humValue;
+      icon.innerHTML=iconValue;
+      console.log(data);
+
+    })
+
+    .catch(err=> alert ('Unable to find City Try again!'));
+});
+

@@ -1,0 +1,134 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: deepskyblue;
+}
+body{
+  font-family: fantasy,cursive,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.input{
+  text-align: center;
+  margin: 110px 0;
+}
+input[type="text"]{
+  height: 60px;
+  width: 700px;
+  background: white;
+  font-family: "Orbitron",serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+input[type="submit"]{
+  height: 60px;
+  width: 100px;
+  background-color: dodgerblue;
+  font-family: "Orbitron",serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.display{
+text-align: center;
+
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#map{
+  width: 95%;
+	margin: 0px;
+	padding: 0px;
+	position:relative;
+	width:95%;
+	height:470px;
+	float:center;
+
+}
+
+.items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 440px;
+}
+
+.change{
+height: 150px;
+}
+.items li {
+  padding: 8px;
+  margin-bottom: 7px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.items li:hover {
+  background-color: deeppink;
+}
+li:nth-child(even){
+	background-color: #f1f2f3;
+	color: black;
+}
+li:nth-child(odd){
+	background-color: #7050;
+	color: green;
+}
+.items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 440px;
+}
+[class*="wrap-"] {
+  float: right;
+  padding: 5px 5px;
+  
+}
+.wrap-1 {
+width: 25%;
+ min-height:500px;
+}
+.wrap-2 {
+	width: 75%;
+	 min-height:600px;
+	 margin: 0px;
+}
+.footer {
+   border:2px solid snow;
+   background-color: antiquewhite;
+  padding: 0px;
+  margin: auto;
+  color: #cc1d57;
+  text-align: center;
+  height: 20px;
+  font-size: 25px;
+  font-size: normal;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  height: 400px;
+}
+.card.front{
+  width: 100%;
+  height: 100%;
+  background: #cc1d57;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: .5s;
+  transform-origin: right;
+  cursor: pointer;
+
+}
